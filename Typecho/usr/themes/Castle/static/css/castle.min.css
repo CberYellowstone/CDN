@@ -2305,6 +2305,7 @@ code {
 }
 }
 
+/* 手机端自适应 */  
 @media (max-width: 580px) {
 #footer .moe-footer-box {
   padding: 23px 8px 15px 8px;
