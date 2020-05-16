@@ -5,12 +5,12 @@
  "404": {
   "home": "Home Page",
   "title": "404 Not Found.",
-  "try": "Maybe you can try to do a search.",
-  "search": "Enter for searching."
+  "try": "Maybe you can try to have a search.",
+  "search": "Enter for search."
  },
 
  "search": {
-  "input": "Enter what you want to search and then press enters.",
+  "input": "Enter what you want to search and to press enter.",
   "empty": "Please enter what you are searching for before press enters."
  },
 
@@ -20,8 +20,8 @@
    "setting": "Settings",
    "login": "Login",
    "logout": "Logout",
-   "light": "Bright (daytime)",
-   "dark": "Dark (night)"
+   "light": "Bright (Daytime)",
+   "dark": "Dark (Night)"
   },
   "login": {
    "logout": {
@@ -47,9 +47,9 @@
    "content": "Coming soon..."
   },
   "dark": {
-   "dark": "Bright theme enabled (daytime Mode)",
+   "dark": "Bright theme enabled (Daytime Mode)",
    "dark_enabled": "It's already dark ~",
-   "light": "Dark theme enabled (night Mode)",
+   "light": "Dark theme enabled (Night Mode)",
    "light_enabled": "It's already bright ~"
   }
  },
@@ -60,17 +60,19 @@
   "comment": "Comments: %s",
   "view": "Views: %s",
   "time": "Y-m-d",
-  "excerptEmpty": "There is nothing."
+  "excerptEmpty": "There is nothing.",
+  "wordNum": "Words: %s"
  },
 
  "post": {
   "view": "Views %s",
   "comment": "Comments %s",
   "time": "Y-m-d",
+  "wordNum": "Words: %s",
   "menu": {
    "edit": {
-    "edit": "Edit",
-    "delete": "Delete"
+    "edit": "Edit article",
+    "delete": "Delete article."
    }
   },
   "delete": {
@@ -108,10 +110,11 @@
   "view": "Views %s",
   "comment": "Comments %s",
   "time": "Y-m-d",
+  "wordNum": "Words: %s",
   "menu": {
    "edit": {
-    "edit": "Edit",
-    "delete": "Delete"
+    "edit": "Edit the page",
+    "delete": "Delete the page"
    }
   },
   "delete": {
@@ -222,5 +225,7 @@
 
  "pjax": {
   "error": "Request failed, please check the network"
- }
+ },
+
+ "toc": "Directory"
 }

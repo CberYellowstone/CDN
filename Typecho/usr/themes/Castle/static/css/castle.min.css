@@ -8,7 +8,7 @@
   \_____|  \__,_| |___/  \__| |_|  \___|
  ----------------------------------------
  * Castle's Stylesheet
- * Last Update: 2020/03/26 [0.9.4]
+ * Last Update: 2020/05/14 [0.9.5.1]
  * Author: ohmyga (https://ohmyga.cn)
  * GitHub: https://github.com/ohmyga233/castle-Typecho-Theme/
  * LICENSE: GPL V3 (https://www.gnu.org/licenses/gpl-3.0.html)
@@ -464,6 +464,25 @@ body {
 .moe-appbar i {
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+
+#header .moe-device-btn-hidden {
+  transform: scale(0);
+}
+
+#header #decice-toolbar-list {
+  width: 170px;
+  height: 170px;
+  padding: unset;
+  overflow: unset;
+  overflow-y: unset;
+  border-radius: 3px;
+}
+
+#header #decice-toolbar-list img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
 }
 
 /* ========== Sidebar ========== */
@@ -1038,7 +1057,7 @@ body {
 /* ===== 分页 ===== */
 #moe-post-list .moe-pagination {
   margin: auto;
-  width: 800px;
+  width: 900px;
   text-align: center;
   padding: 30px 0 35px 0;
 }
@@ -1393,6 +1412,11 @@ img:not(.initial) {
 
 .moe-short-code-hidden:hover {
   background-color: transparent;
+}
+
+.moe-short-code-text-center {
+  display: block;
+  text-align: center;
 }
 
 /* ========== 文章导航栏 ========== */
@@ -2078,6 +2102,9 @@ img:not(.initial) {
   display: block;
   font-size: 23px;
   margin-bottom: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .moe-links-box .moe-links-card .moe-links-description {
@@ -2190,7 +2217,7 @@ code {
 }
 
 #footer .moe-footer-box {
-  width: 800px;
+  width: 900px;
   margin: auto;
   padding: 23px 8px 36px 8px;
 }
@@ -2248,14 +2275,22 @@ code {
 @media(max-width: 1023px) {
  #moe-post-list .mdui-card,
  .moe-post-card,
+ #moe-post-list .moe-pagination,
  .moe-comment-card,
  .moe-comments-list-card,
  .moe-404-card,
  .moe-archive-card,
  .mdui-drawer-body-right .moe-post-card,
  .mdui-drawer-body-right .moe-comment-card,
- .mdui-drawer-body-right .moe-comments-list-card {
+ .mdui-drawer-body-right .moe-comments-list-card,
+ #footer .moe-footer-box {
   width: 800px;
+ }
+}
+
+@media (max-width: 970px) {
+ #footer .moe-footer-box {
+  text-align: center;
  }
 }
 
@@ -2295,21 +2330,6 @@ code {
  .moe-post-card .moe-card-content .moe-post-card-copy {
   margin: 3.5em 0em 1em 0em!important;
  }
-}
-
-@media (max-width: 970px) {
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-      left: -68px; }
-#footer .moe-footer-box {
-  text-align: center;
-}
-}
-
-/* 手机端自适应 */  
-@media (max-width: 580px) {
-#footer .moe-footer-box {
-  padding: 23px 8px 15px 8px;
-}
 }
 
 @media (max-width: 800px) {
@@ -2431,9 +2451,21 @@ code {
   margin-top: 50px;
   position: relative;
  }
+
 }
 
+@media (max-width: 970px) {
+#footer .moe-footer-box {
+  text-align: center;
+}
+}
+
+
 @media (max-width: 570px) {
+ #footer .moe-footer-box {
+  padding: 23px 8px 15px 8px;
+ }
+
  #footer .moe-footer-bottom .moe-footer-icp {
   margin-bottom: 5px;
  }
@@ -2469,4 +2501,3 @@ html::-webkit-scrollbar-thumb{
 html::-webkit-scrollbar-thumb:hover{
   background-color: #bbb;
 }
-
